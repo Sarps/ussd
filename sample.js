@@ -9,7 +9,7 @@ module.exports = (text,) => {
     if (text === '2')
         return `CON ${render('samples.pay.select_momo_acct', {})}`
     if (text === '3' || text === '4')
-        return `CON ${render('samples.pay.select_momo_acct', {})}`
+        return `CON ${render('samples.not_ready', {})}`
     if (/^1\*\d$/.test(text))
         return `CON ${render('samples.pay.select_bank_acct', {})}`
     if (text === '2*2')
