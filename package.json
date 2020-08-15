@@ -9,6 +9,7 @@
     "mustache": "^4.0.1"
   },
   "scripts": {
-    "dev": "nodemon ."
+    "dev": "nodemon .",
+    "start": "node ."
   }
 }
