@@ -14,4 +14,4 @@ app.post('/', (req, res) => {
     res.send(result)
 })
 
-app.listen(8000, () => console.log("Started"))
+app.listen((process.env.PORT || 8000), () => console.log("Started"))

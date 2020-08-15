@@ -37,7 +37,7 @@
       <recent name="C:\Users\C809610\Projects\Tests\dussd\views\samples\pay" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -48,8 +48,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -64,7 +75,7 @@
       <updated>1597470718327</updated>
       <workItem from="1597470719831" duration="5920000" />
       <workItem from="1597500251116" duration="597000" />
-      <workItem from="1597518732629" duration="8762000" />
+      <workItem from="1597518732629" duration="9452000" />
     </task>
     <servers />
   </component>
@@ -76,22 +87,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="716" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597473913679" />
-    <state width="949" height="282" key="GridCell.Tab.0.bottom" timestamp="1597476647306">
+    <state width="949" height="350" key="GridCell.Tab.0.bottom" timestamp="1597528180496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597476647306" />
-    <state width="949" height="282" key="GridCell.Tab.0.center" timestamp="1597476647306">
+    <state width="949" height="350" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597528180496" />
+    <state width="949" height="350" key="GridCell.Tab.0.center" timestamp="1597528180496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597476647306" />
-    <state width="949" height="282" key="GridCell.Tab.0.left" timestamp="1597476647306">
+    <state width="949" height="350" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597528180496" />
+    <state width="949" height="350" key="GridCell.Tab.0.left" timestamp="1597528180495">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597476647306" />
-    <state width="949" height="282" key="GridCell.Tab.0.right" timestamp="1597476647306">
+    <state width="949" height="350" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597528180495" />
+    <state width="949" height="350" key="GridCell.Tab.0.right" timestamp="1597528180496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597476647306" />
+    <state width="949" height="350" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597528180496" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1597474235653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
