@@ -1,4 +1,5 @@
 const express = require('express')
+// require('dotenv').config()
 const sample = require('./sample')
 
 const app = express()
@@ -7,8 +8,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
 app.post('/', (req, res) => {
-    console.log(req.url)
-    console.log(req.method, req.body)
+    console.log(req.body)
     const result = sample(req.body.text)
     console.log(result)
     res.send(result)

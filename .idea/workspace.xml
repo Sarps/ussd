@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b487f67-7ec5-4290-8caa-4885b4318656" name="Default Changelist" comment="" />
+    <list default="true" id="1b487f67-7ec5-4290-8caa-4885b4318656" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/schema/ussdml.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/mustache/index.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/ussdml/index.ussdml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/samples/main_menu.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/views/mustache/samples/main_menu.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/samples/not_ready.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/views/mustache/samples/not_ready.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/samples/pay/confirm_pay.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/views/mustache/samples/pay/confirm_pay.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/samples/pay/enter_momo_phone.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/views/mustache/samples/pay/enter_momo_phone.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/samples/pay/menu.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/views/mustache/samples/pay/menu.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/samples/pay/select_bank.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/views/mustache/samples/pay/select_bank.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/samples/pay/select_bank_acct.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/views/mustache/samples/pay/select_bank_acct.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/samples/pay/select_momo_acct.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/views/mustache/samples/pay/select_momo_acct.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/samples/thank_you.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/views/mustache/samples/thank_you.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/users/profile.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/views/mustache/users/profile.mustache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +49,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1g7fnGIIhkT2gt6GHe5Q03S4UxI" />
   <component name="ProjectViewState">
@@ -26,18 +65,19 @@
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.54" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/views/samples" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\C809610\Projects\Tests\dussd\views\samples\pay" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\C809610\Projects\Tests\dussd\views\samples" />
       <recent name="C:\Users\C809610\Projects\Tests\dussd\views\samples\pay" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\C809610\Projects\Tests\dussd\views\mustache" />
+      <recent name="C:\Users\C809610\Projects\Tests\dussd\views\samples\pay" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -60,8 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -75,37 +115,57 @@
       <updated>1597470718327</updated>
       <workItem from="1597470719831" duration="5920000" />
       <workItem from="1597500251116" duration="597000" />
-      <workItem from="1597518732629" duration="10061000" />
+      <workItem from="1597518732629" duration="10493000" />
+      <workItem from="1597558026192" duration="14320000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="716" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597473913679">
+    <state x="716" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597558488614">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="716" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597473913679" />
-    <state width="949" height="350" key="GridCell.Tab.0.bottom" timestamp="1597528180496">
+    <state x="716" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597558488614" />
+    <state width="1899" height="350" key="GridCell.Tab.0.bottom" timestamp="1597584704922">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="350" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597528180496" />
-    <state width="949" height="350" key="GridCell.Tab.0.center" timestamp="1597528180496">
+    <state width="1899" height="350" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597584704922" />
+    <state width="1899" height="350" key="GridCell.Tab.0.center" timestamp="1597584704921">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="350" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597528180496" />
-    <state width="949" height="350" key="GridCell.Tab.0.left" timestamp="1597528180495">
+    <state width="1899" height="350" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597584704921" />
+    <state width="1899" height="350" key="GridCell.Tab.0.left" timestamp="1597584704920">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="350" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597528180495" />
-    <state width="949" height="350" key="GridCell.Tab.0.right" timestamp="1597528180496">
+    <state width="1899" height="350" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597584704920" />
+    <state width="1899" height="350" key="GridCell.Tab.0.right" timestamp="1597584704921">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="350" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597528180496" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1597474235653">
+    <state width="1899" height="350" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597584704921" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1597558613395">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597474235653" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597558613395" />
+    <state x="666" y="119" width="587" height="801" key="find.popup" timestamp="1597529331245">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="666" y="119" width="587" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597529331245" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597572203329">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597572203329" />
   </component>
 </project>
