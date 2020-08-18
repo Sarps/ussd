@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ussdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://github.com/ussdml/schema/releases/download/v0.0.1/ussdml.xsd">
+
+    <view name="menu" back-allowed="true">
+        <text>Pay SilverBird Cinema with TapPay</text>
+        <text/>
+        <text>Pay through ?</text>
+        <choice>
+            <option view="select_bank">Bank Account</option>
+            <option view="select_momo_acct">Mobile Money</option>
+            <option view="index:not_ready">VISA / Mastercard</option>
+            <option view="index:not_ready">Other Wallets</option>
+        </choice>
+    </view>
+
+    <view name="select_bank" back-allowed="true">
+        <text>Pay SilverBird Cinema with TapPay</text>
+        <text/>
+        <text>Select another payment method if your bank is not listed</text>
+        <choice trim-content="true">
+            <dynamic-option value="{{item.id}}" view="select_bank_acct"
+                            items="BankService.banks">{{item.name}}</dynamic-option>
+        </choice>
+    </view>
+
+    <view name="select_bank_acct" back-allowed="true">
+        <text>Pay SilverBird Cinema with TapPay</text>
+        <text/>
+        <text>Which account?</text>
+        <choice>
+            <dynamic-option items="BankService.accounts" value="{{item.id}}" view="confirm_pay">{{item.name}} - {{item.account}}</dynamic-option>
+        </choice>
+    </view>
+
+    <view name="select_momo_acct" back-allowed="true">
+        <text>Pay SilverBird Cinema with TapPay</text>
+        <text/>
+        <text>Which phone number?</text>
+        <choice>
+            <option view="confirm_pay">This phone ({{phone}})</option>
+            <option view="enter_momo_phone">Other</option>
+        </choice>
+    </view>
+
+    <view name="confirm_pay" back-allowed="true">
+        <text>Pay SilverBird Cinema with TapPay</text>
+        <text/>
+        <text>Kindly confirm payment</text>
+        <choice>
+            <option view="index:thank_you">Confirm</option>
+            <option view="index:thank_you">Cancel</option>
+        </choice>
+    </view>
+
+</ussdml>

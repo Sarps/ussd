@@ -5,8 +5,15 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
+    "fast-xml-parser": "^3.17.4",
     "glob": "^7.1.6",
-    "mustache": "^4.0.1"
+    "jsonpath": "^1.0.2",
+    "mustache": "^4.0.1",
+    "xmldom": "^0.3.0",
+    "xpath": "^0.0.27"
+  },
+  "peerDependencies": {
+    "lokijs": "^1.5.10"
   },
   "scripts": {
     "dev": "nodemon .",
