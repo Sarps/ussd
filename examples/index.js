@@ -1,6 +1,5 @@
 const express = require('express')
-// const {process, init, UssdRequest} = require('./lib')
-const ussdml = require('./lib')
+const ussdml = require('../lib')
 const path = require('path')
 
 const app = express()

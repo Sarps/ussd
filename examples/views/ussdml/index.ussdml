@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ussdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="../../lib/schema/ussdml.xsd">
+        xsi:noNamespaceSchemaLocation="https://github.com/ussdml/schema/releases/download/v0.0.2/ussdml.xsd">
 
     <route view="thank_you">/</route>
     <!--*314*vendor#-->

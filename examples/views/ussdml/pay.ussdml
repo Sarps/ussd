@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ussdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="../../lib/schema/ussdml.xsd">
+        xsi:noNamespaceSchemaLocation="../../../lib/schema/ussdml.xsd">
 
     <view name="menu" back-allowed="true" controller-method="fetchVendorList">
         <text>Pay {{vendor}} Cinema with TapPay</text>
