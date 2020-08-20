@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ussdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="https://github.com/ussdml/schema/releases/download/v0.0.1/ussdml.xsd">
+        xsi:noNamespaceSchemaLocation="../../lib/schema/ussdml.xsd">
 
-    <view name="menu" back-allowed="true">
-        <text>Pay SilverBird Cinema with TapPay</text>
+    <view name="menu" back-allowed="true" controller-method="fetchVendorList">
+        <text>Pay {{vendor}} Cinema with TapPay</text>
         <text/>
         <text>Pay through ?</text>
         <choice>
@@ -14,22 +14,23 @@
         </choice>
     </view>
 
-    <view name="select_bank" back-allowed="true">
+    <view name="select_bank" back-allowed="true" controller-method="fetchBankList">
         <text>Pay SilverBird Cinema with TapPay</text>
         <text/>
         <text>Select another payment method if your bank is not listed</text>
-        <choice trim-content="true">
+        <choice trim-content="true" key="bank">
             <dynamic-option value="{{item.id}}" view="select_bank_acct"
-                            items="BankService.banks">{{item.name}}</dynamic-option>
+                            items="banks">{{item.name}}</dynamic-option>
         </choice>
     </view>
 
-    <view name="select_bank_acct" back-allowed="true">
+    <view name="select_bank_acct" back-allowed="true" controller-method="fetchAccountList">
         <text>Pay SilverBird Cinema with TapPay</text>
         <text/>
         <text>Which account?</text>
-        <choice>
-            <dynamic-option items="BankService.accounts" value="{{item.id}}" view="confirm_pay">{{item.name}} - {{item.account}}</dynamic-option>
+        <choice key="account">
+            <dynamic-option items="accounts" value="{{item.id}}"
+                            view="confirm_pay">{{item.name}} - {{item.account}}</dynamic-option>
         </choice>
     </view>
 
@@ -37,8 +38,8 @@
         <text>Pay SilverBird Cinema with TapPay</text>
         <text/>
         <text>Which phone number?</text>
-        <choice>
-            <option view="confirm_pay">This phone ({{phone}})</option>
+        <choice key="phone">
+            <option view="confirm_pay" value="{{phone}}">This phone ({{phone}})</option>
             <option view="enter_momo_phone">Other</option>
         </choice>
     </view>

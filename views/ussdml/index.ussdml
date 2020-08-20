@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ussdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="https://github.com/ussdml/schema/releases/download/v0.0.1/ussdml.xsd">
+        xsi:noNamespaceSchemaLocation="../../lib/schema/ussdml.xsd">
+
+    <route view="thank_you">/</route>
+    <!--*314*vendor#-->
+    <route view="pay:menu">/:vendor</route>
 
     <view name="not_ready">
         <text>Ooops! TapPay is still working on this feature. Sorry :)</text>
