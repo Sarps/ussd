@@ -6,8 +6,8 @@
         <text>Pay {{vendor}} Cinema with TapPay</text>
         <text/>
         <text>Pay through ?</text>
-        <choice>
-            <option view="select_bank">Bank Account</option>
+        <choice key="method">
+            <option view="select_bank" value="bank">Bank Account</option>
             <option view="select_momo_acct">Mobile Money</option>
             <option view="index:not_ready">VISA / Mastercard</option>
             <option view="index:not_ready">Other Wallets</option>
@@ -29,7 +29,7 @@
         <text/>
         <text>Which account?</text>
         <choice key="account">
-            <dynamic-option items="accounts" value="{{item.id}}"
+            <dynamic-option items="accounts" value="{{item.account}}"
                             view="confirm_pay">{{item.name}} - {{item.account}}</dynamic-option>
         </choice>
     </view>

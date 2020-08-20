@@ -9,6 +9,7 @@ map.set('fetchBankList', () => ({
 
 map.set('fetchAccountList', () => ({
     accounts: [
-
+        {name: 'Savings', account: '9040009991234'},
+        {name: 'Current', account: '9040001239087'},
     ]
 }))
