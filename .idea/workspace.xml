@@ -20,56 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b487f67-7ec5-4290-8caa-4885b4318656" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dussd.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/models/persistence/KnexStorage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Mustacher.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Renderer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ViewParser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/helpers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/ProcessOutput.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/UssdRequest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/persistence/MemoryStorage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/persistence/Storage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/xml/Choice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/xml/DynamicOption.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/xml/Input.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/xml/Node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/xml/Option.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/xml/Route.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/xml/Text.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/xml/View.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/schema/src/generated/Choice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/schema/src/generated/DynamicOption.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/schema/src/generated/ObjectFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/schema/src/generated/Option.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/schema/src/generated/Ussdml.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/schema/src/generated/View.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/schema/ussdml.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/methods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mustache/index.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mustache/samples/main_menu.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mustache/samples/not_ready.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mustache/samples/pay/confirm_pay.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mustache/samples/pay/enter_momo_phone.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mustache/samples/pay/menu.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mustache/samples/pay/select_bank.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mustache/samples/pay/select_bank_acct.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mustache/samples/pay/select_momo_acct.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mustache/samples/thank_you.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mustache/users/profile.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/ussdml/index.ussdml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/ussdml/pay.ussdml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -96,13 +52,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.54" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/models/xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/models/persistence" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\C809610\Projects\Tests\dussd\lib\models\persistence" />
       <recent name="C:\Users\C809610\Projects\Tests\dussd\lib\models\xml" />
       <recent name="C:\Users\C809610\Projects\Tests\dussd\views\samples" />
       <recent name="C:\Users\C809610\Projects\Tests\dussd\views\samples\pay" />
@@ -158,7 +115,8 @@
       <workItem from="1597759528826" duration="21017000" />
       <workItem from="1597839427829" duration="27137000" />
       <workItem from="1597918483193" duration="17712000" />
-      <workItem from="1597959965592" duration="1369000" />
+      <workItem from="1597959965592" duration="2907000" />
+      <workItem from="1597992514692" duration="4017000" />
     </task>
     <servers />
   </component>
@@ -187,26 +145,26 @@
     </state>
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597673184891" />
     <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1597954878714" />
-    <state width="645" height="520" key="GridCell.Tab.0.bottom" timestamp="1597961063049">
+    <state width="645" height="383" key="GridCell.Tab.0.bottom" timestamp="1597962886590">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="350" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597764219864" />
-    <state width="645" height="520" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597961063049" />
-    <state width="645" height="520" key="GridCell.Tab.0.center" timestamp="1597961063049">
+    <state width="645" height="383" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597962886590" />
+    <state width="645" height="383" key="GridCell.Tab.0.center" timestamp="1597962886590">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="350" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597764219864" />
-    <state width="645" height="520" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597961063049" />
-    <state width="645" height="520" key="GridCell.Tab.0.left" timestamp="1597961063048">
+    <state width="645" height="383" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597962886590" />
+    <state width="645" height="383" key="GridCell.Tab.0.left" timestamp="1597962886590">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="350" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597764219864" />
-    <state width="645" height="520" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597961063048" />
-    <state width="645" height="520" key="GridCell.Tab.0.right" timestamp="1597961063049">
+    <state width="645" height="383" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597962886590" />
+    <state width="645" height="383" key="GridCell.Tab.0.right" timestamp="1597962886590">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="350" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597764219864" />
-    <state width="645" height="520" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597961063049" />
+    <state width="645" height="383" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597962886590" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1597558613395">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

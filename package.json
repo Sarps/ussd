@@ -12,11 +12,14 @@
     "xpath": "^0.0.27"
   },
   "peerDependencies": {
-    "lokijs": "^1.5.10"
+    "lokijs": "^1.5.10",
+    "knex": "^0.21.5"
   },
   "devDependencies": {
+    "express": "^4.17.1",
     "lokijs": "^1.5.10",
-    "express": "^4.17.1"
+    "knex": "^0.21.5",
+    "@types/node": "^14.6.0"
   },
   "scripts": {
     "dev": "nodemon examples/index.js",
