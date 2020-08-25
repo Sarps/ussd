@@ -1,5 +1,6 @@
 
 import RouteParser = require('route-parser');
+import Loki = require('lokijs')
 import { EventEmitter } from 'events';
 
 declare namespace UssdML {
@@ -7,6 +8,10 @@ declare namespace UssdML {
     interface ChoiceChildMap {
         option: Option,
         'dynamic-option': DynamicOption
+    }
+
+    interface MemoryStorageConfig {
+        file: string
     }
 
     interface ProcessOutput {
@@ -23,6 +28,11 @@ declare namespace UssdML {
         customStorage: Storage
         viewDir: string
         controllerMethods: Map<string, Function>
+    }
+
+    interface RenderOutput {
+        text: string
+        inputs: {string: string}
     }
 
     interface ViewChildMap {
@@ -56,6 +66,12 @@ declare namespace UssdML {
         public process(data: any): Array<ProcessOutput>
     }
 
+    class MemoryStorage {
+        db: Loki
+        routeCollection: Loki.Collection
+        constructor(options: MemoryStorageConfig)
+    }
+
     abstract class Node {
         constructor()
         static fromXml() : Node
@@ -70,7 +86,20 @@ declare namespace UssdML {
     }
 
     class Renderer extends EventEmitter {
+        private _views: {string: View<Node>}
+        private _routes: Array<Route>
+        private _methods: Map<string, Function>
+        storage: Storage
+        static _s: {string: Storage}
         init(config: RendererConfig): void
+        render(view: string, data: object): string
+        process(request: UssdRequest): {textResponse: string, open: boolean}
+
+        private _doRender(viewName: string, data: object): RenderOutput
+        private _initStorage({storageName, storageOptions, customStorage}): Promise<void>
+        private _initViews({viewDir: dir}): Promise<void>
+        private _parseRoute(route: string): {view: string, inputs: object, data: object}
+        private _matchInput(inputs: RenderOutput["inputs"], text: string): {view: string, key: string, value: string}
     }
 
     class Route {
@@ -80,6 +109,15 @@ declare namespace UssdML {
         constructor();
         static fromXml() : Route;
         public matches(domain: string, route: string): boolean;
+    }
+
+    class RouteBuilder {
+        static ROUTE_SEPARATOR: string;
+        static INPUT_SEPARATOR: string;
+        inputs: Map<string, string>;
+        data: Map<string, string>;
+        input: string;
+        static parse(route: string): RouteBuilder;
     }
 
     abstract class Storage {
