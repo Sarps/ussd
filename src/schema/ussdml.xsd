@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="ussdml">
+        <xsd:complexType>
+            <xsd:choice maxOccurs="unbounded">
+                <xsd:element name="view" type="view"/>
+                <xsd:element name="route" type="route"/>
+            </xsd:choice>
+            <xsd:attribute name="version" default="1.0.0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="1.0.0"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+        </xsd:complexType>
+        <xsd:unique name="viewNameAttrUnique">
+            <xsd:selector xpath=".//view"/>
+            <xsd:field xpath="@name"/>
+        </xsd:unique>
+    </xsd:element>
+
+    <xsd:complexType name="route">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="view" type="xsd:string"/>
+                <xsd:attribute name="domain" type="xsd:string" default=""/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="view">
+        <xsd:choice maxOccurs="unbounded" minOccurs="1">
+            <xsd:element name="text" type="xsd:string"/>
+            <xsd:element name="input" type="input"/>
+            <xsd:element name="choice" type="choice"/>
+        </xsd:choice>
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="controller-method" type="xsd:string" default=""/>
+        <xsd:attribute name="back-allowed" default="false" type="xsd:boolean"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="choice">
+        <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="dynamic-option" type="dynamic-option"/>
+            <xsd:element name="option" type="option" maxOccurs="unbounded"/>
+        </xsd:choice>
+        <xsd:attribute name="trim-content" type="xsd:boolean"/>
+        <xsd:attribute name="key" type="xsd:string"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="input">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="key" type="xsd:string"/>
+                <xsd:attribute name="view" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="option">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="value" type="xsd:string"/>
+                <xsd:attribute name="view" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="dynamic-option">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="items" type="xsd:string"/>
+                <xsd:attribute name="value" type="xsd:string"/>
+                <xsd:attribute name="view" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+</xsd:schema>
